@@ -1,0 +1,41 @@
+{
+    "model" : {
+        "min_input_size":       800,
+        "max_input_size":       1333,
+        "anchors":              [55,69, 75,234, 133,240, 136,129, 142,363, 203,290, 228,184, 285,359, 341,260],
+        "labels":               ["table"]
+    },
+
+    "train": {
+        "train_image_folder":   "/Users/abhinav/Home/Agenda PdfToHTML/Module8-Tables:Headers/YOLO/data/trainV2",
+        "train_annot_folder":   "/Users/abhinav/Home/Agenda PdfToHTML/Module8-Tables:Headers/YOLO/data/trainV2.csv",
+        "cache_name":           "table_train.pkl",
+
+        "train_times":          8,
+        "pretrained_weights":   "",
+        "batch_size":           1,
+        "learning_rate":        1e-4,
+        "nb_epochs":            100,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0,1",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "logs",
+        "saved_weights_name":   "table.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "/Users/abhinav/Home/Agenda PdfToHTML/Module8-Tables:Headers/YOLO/data/val",
+        "valid_annot_folder":   "/Users/abhinav/Home/Agenda PdfToHTML/Module8-Tables:Headers/YOLO/data/val.csv",
+        "cache_name":           "table_val.pkl",
+
+        "valid_times":          1
+    }
+}
