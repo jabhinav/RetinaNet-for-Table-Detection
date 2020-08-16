@@ -9,7 +9,7 @@ Table Detection requires pre-processing of input image which is using distance t
 
 **Deep Learning Framework**: Keras with Tensorflow
 
-**Dataset**: For Dataset of Document Images with Tables present, refer the enclosed `Object Detection Details and Survey`
+**Dataset**: For links to dataset of document images with tables, refer the enclosed `Object Detection Details and Survey`
 
 **SampleResults**: Contains document images with tables detected by the RetinaNet model
 
