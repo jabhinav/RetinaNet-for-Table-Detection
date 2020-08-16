@@ -6,3 +6,5 @@ Deep Learning Models for Table Detection in PDF Document images:
 - YOLOv3 (Archived Model)
 
 Table Detection requires pre-processing of input image which is using distance transform and saving information provided by EuclideanDistanceTransform, LinearDistanceTransform, MaxDistanceTransform as three channels of the image. Method present in `DetectTablesUtils.py` as `preProcessSampleImages()`
+
+Deep Learning Framework used: Keras with Tensorflow
